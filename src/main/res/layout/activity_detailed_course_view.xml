@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.detailedCourseView">
+
+    <EditText
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/courseTitle"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTitle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dates">
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/start_date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/end_date"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/courseNotesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dates"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/courseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseNotesLabel"
+        android:inputType="textMultiLine"
+        android:maxHeight="200dp" />
+    <TextView
+        android:id="@+id/courseTermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/term_title"
+        android:textSize="24sp"
+        android:layout_below="@id/courseDescription"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTermTitle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/completeCheck">
+        <EditText
+            android:id="@+id/courseStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TermTitle"
+            android:layout_centerHorizontal="true"
+            android:text="@string/course_status" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/assesmentView"
+        android:name="com.pieflea.classprojectfinal.UI.Fragments.viewAssesmentFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/contactInfo"
+        android:layout_below="@id/completeCheck"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sendNotesButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/contactInfo">
+        <EditText
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructor_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/contactPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <EditText
+            android:id="@+id/contactEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/sendNotesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_notes"
+        android:layout_above="@id/saveCourseButton"
+        android:onClick="sendNotes"/>
+    <Button
+        android:id="@+id/saveCourseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_course_changes"
+        android:layout_above="@id/addAssesmentButton"
+        android:onClick="saveCourseChanges"/>
+
+    <Button
+        android:id="@+id/addAssesmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/removeAssesmentButton"
+        android:text="@string/add_assesment"
+        android:onClick="addNewAssesment" />
+
+    <Button
+        android:id="@+id/removeAssesmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/remove_course"
+        android:onClick="removeCourse"/>
+
+
+</RelativeLayout>

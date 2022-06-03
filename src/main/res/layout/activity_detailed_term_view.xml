@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.detailedTermView">
+
+    <EditText
+        android:id="@+id/termTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/term_title"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termTitle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dates">
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/start_date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/end_date"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/courseDescriptionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dates"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@id/termNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseDescriptionLabel"
+        android:inputType="textMultiLine"
+        android:maxHeight="200dp" />
+
+
+    <fragment
+        android:id="@+id/courseView"
+        android:name="com.pieflea.classprojectfinal.UI.Fragments.viewCourseFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/termNotes"
+        android:layout_above="@id/saveCourseButton"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/saveCourseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_term_changes"
+        android:layout_above="@id/addAssesmentButton"
+        android:onClick="saveTermChanges"
+        />
+
+    <Button
+        android:id="@+id/addAssesmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/removeAssesmentButton"
+        android:text="@string/add_new_course"
+        android:onClick="addCourse"/>
+
+    <Button
+        android:id="@+id/removeAssesmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="removeTerm"
+        android:text="@string/remove_term" />
+
+
+</RelativeLayout>

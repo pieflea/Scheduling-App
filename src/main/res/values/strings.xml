@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">classProjectFinal</string>
+    <string name="about">about</string>
+    <string name="help">help</string>
+    <string name="courses_this_term">Courses this term:</string>
+    <string name="view_all_courses">View All courses</string>
+    <string name="view_all_terms">View All Terms</string>
+    <string name="view_upcoming_assesments">View Upcoming Assesments</string>
+    <string name="helpText1">This is an app designed to help schedule and organise classes, terms and assesments.</string>
+    <string name="helpText2">To add a class to a term:</string>
+    <string name="helpText3">First navigate to the appropriate term.</string>
+    <string name="helpText4">To add an assesment:</string>
+    <string name="helpText5">First navigate to the appropriate class.</string>
+    <string name="helpText6">To add a term:</string>
+    <string name="helpText7">Navigate to the term view list.</string>
+    <string name="helpText8">If you have questions, please send an email to fakeEmail@email.com</string>
+    <string name="aboutText">This App was developed by Ian Pfeifle for the purposes of WGU course: Software Development Capstone – C868, for the purpose of demonstrating skill with code requisite for app development.</string>
+    <string-array name="TermStringTest">
+        <item>Term2</item>
+        <item>Term3</item>
+        <item>Term4</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="courseTitle">Course Title</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="course_description">Course Description:</string>
+    <string name="save_course_changes">save course changes</string>
+    <string name="add_assesment">add assessment</string>
+    <string name="remove_assesment">remove assesment</string>
+    <string name="add_new_term">Add New Term</string>
+    <string name="add_new_course">Add New Course</string>
+    <string name="course_title_header">Course Title |</string>
+    <string name="start_date_header">Start Date |</string>
+    <string name="end_date_header">End Date</string>
+    <string name="term_title_header">Term Title |</string>
+    <string name="add_course">Add Course</string>
+    <string name="remove_assessment">remove assessment</string>
+    <string name="save_term_changes">Save Term Changes</string>
+    <string name="add_term">Add Term</string>
+    <string name="remove_term">Remove Term</string>
+    <string name="remove_course">remove Course</string>
+    <string name="notes">Notes:</string>
+    <string name="term_description">Term Description:</string>
+    <string name="start_time">Start Time:</string>
+    <string name="end_time">End Time:</string>
+    <string name="save_assessment">save Assessment</string>
+    <string name="assesment_name">Name |</string>
+    <string name="spacer">\ | \ </string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="term_title">Term Title</string>
+    <string name="notes_placeholder">Notes</string>
+    <string name="to">To</string>
+    <string name="course_status">Course Status</string>
+    <string name="add_notification">Add Notification</string>
+    <string name="time_to_notify">HH:mm:ss</string>
+    <string name="save_notification">Save Notification</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="send_notes">Send Notes</string>
+    <string name="title_activity_login">Login</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="login">Login:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="loginButton">Login</string>
+    <string name="search">search</string>
+    <string name="search_terms">Search Terms</string>
+    <string name="term_added">Term added |</string>
+    <string name="by_user">\ By User |</string>
+    <string name="at_time">\ At Time</string>
+    <string name="view_activity_report">View Activity Report</string>
+    <string name="event">Event</string>
+    <string name="user">User</string>
+    <string name="time">Time</string>
+</resources>

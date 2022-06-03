@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TableRow>
+        <TextView
+            android:id="@+id/course_item_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="placeholder"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/course_item_start"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="placeholder"
+            android:paddingHorizontal="5dp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/course_item_end"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="placeholder"
+            android:singleLine="true"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

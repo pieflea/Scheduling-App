@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/helpButton"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/help"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/aboutButton"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/about"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/viewTerms"
+        android:title="@string/view_all_terms"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/viewReport"
+        android:title="@string/view_activity_report"
+        app:showAsAction="never"
+        />
+    <!-- Deprecated Features, caused too much trouble.
+    <item
+        android:id="@+id/viewCourses"
+        android:title="@string/view_all_courses"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/viewAssesments"
+        android:title="@string/view_upcoming_assesments"
+        app:showAsAction="never"
+        />-->
+
+</menu>
